@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./app.js" defer type="module"></script>
+    <title>Contatos</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./rest.css">
+
+</head>
+
+<body>
+    <header></header>
+    <main>
+
+        <h1>REGISTRO DE CONTATOS</h1>
+        <div class="container-input">
+            <input type="text" placeholder="nome" id="nome" class="campo-texto">
+            <input type="text" placeholder="email" id="email" class="campo-texto">
+            <input type="text" placeholder="endereço" id="endereco" class="campo-texto">
+            <input type="text" placeholder="cidade" id="cidade" class="campo-texto">
+            <button class="salvar">salvar</button>
+        </div>
+
+        <hr>
+        <div class="tabela">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>email</th>
+                    <th>endereço</th>
+                    <th>cidade</th>
+                    <th>ação</th>
+
+
+
+                </tr>
+
+                <tr>
+                    <td> 1</td>
+                    <td>vitor</td>
+                    <td>vitor@gmail.com</td>
+                    <td>Rua montevideo</td>
+                    <td>Barueri</td>
+                    <td>
+                        <div class="update-delete">
+                            <button class="acao">update</button>
+                            <button class="acao">delete</button>
+                        </div>
+                    </td>
+
+
+                </tr>
+            </table>
+        </div>
+
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
