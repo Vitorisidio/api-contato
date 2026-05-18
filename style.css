@@ -88,6 +88,9 @@ td{
 
 .update-delete{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .acao{
