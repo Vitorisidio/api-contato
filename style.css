@@ -61,6 +61,11 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    
+     max-height: 542px;
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
 table{
@@ -68,6 +73,7 @@ table{
     border-collapse: collapse;
     background-color: #1E293B;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
 }
 
 th{
@@ -105,4 +111,15 @@ td{
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
 
+}
+
+.excluir{
+    background: #DC2626;
+}
+
+
+
+.foto-contato{
+    width: 60px;
+    height: 60px;
 }
