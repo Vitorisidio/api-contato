@@ -2,6 +2,7 @@
 
 import {
     getContatos,
+    getContato,
     postContatos,
     putContato,
     deleteContato
@@ -90,15 +91,17 @@ function criarLinha(contato){
     })
 
     // UPDATE
-    btnEditar.addEventListener('click', () => {
+    btnEditar.addEventListener('click', async () => {
 
-        foto.value = contato.foto
-        nome.value = contato.nome
-        email.value = contato.email
-        endereco.value = contato.endereco
-        cidade.value = contato.cidade
-
-        idEditando = contato.id
+        const contatoAtualizado = await getContato(contato.id)
+    
+        foto.value = contatoAtualizado.foto
+        nome.value = contatoAtualizado.nome
+        email.value = contatoAtualizado.email
+        endereco.value = contatoAtualizado.endereco
+        cidade.value = contatoAtualizado.cidade
+    
+        idEditando = contatoAtualizado.id
     })
 
     table.appendChild(tr)

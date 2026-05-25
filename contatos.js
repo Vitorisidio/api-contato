@@ -9,6 +9,12 @@ export async function getContatos() {
 
 }
 
+export async function getContato(id) {
+    const response = await fetch(`${URL}/${id}`)//Faz a requisição para a URL da API
+    if (!response.ok) throw new Error('Erro ao buscar contatos') // força lançar um erro caso haja algum, mesmo usando try/catch
+    return response.json()// Converte a resposta da API para JSON e retorna os dados
+}
+
 export async function postContatos(contato) {
     // Configurações da requisição
     const options = {
